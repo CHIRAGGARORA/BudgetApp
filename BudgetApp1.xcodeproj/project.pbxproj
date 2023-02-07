@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E24836F829929C23003E65E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24836F729929C23003E65E1 /* AppDelegate.swift */; };
 		E24836FA29929C23003E65E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24836F929929C23003E65E1 /* SceneDelegate.swift */; };
-		E24836FC29929C23003E65E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24836FB29929C23003E65E1 /* ViewController.swift */; };
+		E24836FC29929C23003E65E1 /* BudgetCategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24836FB29929C23003E65E1 /* BudgetCategoriesTableViewController.swift */; };
 		E24836FF29929C23003E65E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24836FD29929C23003E65E1 /* Main.storyboard */; };
 		E248370129929C25003E65E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E248370029929C25003E65E1 /* Assets.xcassets */; };
 		E248370429929C25003E65E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E248370229929C25003E65E1 /* LaunchScreen.storyboard */; };
+		E248370D29929C66003E65E1 /* BudgetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E248370B29929C66003E65E1 /* BudgetModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E24836F429929C23003E65E1 /* BudgetApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24836F729929C23003E65E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24836F929929C23003E65E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E24836FB29929C23003E65E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E24836FB29929C23003E65E1 /* BudgetCategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCategoriesTableViewController.swift; sourceTree = "<group>"; };
 		E24836FE29929C23003E65E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E248370029929C25003E65E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E248370329929C25003E65E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E248370529929C25003E65E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E248370C29929C66003E65E1 /* BudgetModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				E24836F729929C23003E65E1 /* AppDelegate.swift */,
 				E24836F929929C23003E65E1 /* SceneDelegate.swift */,
-				E24836FB29929C23003E65E1 /* ViewController.swift */,
+				E24836FB29929C23003E65E1 /* BudgetCategoriesTableViewController.swift */,
 				E24836FD29929C23003E65E1 /* Main.storyboard */,
 				E248370029929C25003E65E1 /* Assets.xcassets */,
 				E248370229929C25003E65E1 /* LaunchScreen.storyboard */,
 				E248370529929C25003E65E1 /* Info.plist */,
+				E248370B29929C66003E65E1 /* BudgetModel.xcdatamodeld */,
 			);
 			path = BudgetApp1;
 			sourceTree = "<group>";
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E24836FC29929C23003E65E1 /* ViewController.swift in Sources */,
+				E248370D29929C66003E65E1 /* BudgetModel.xcdatamodeld in Sources */,
+				E24836FC29929C23003E65E1 /* BudgetCategoriesTableViewController.swift in Sources */,
 				E24836F829929C23003E65E1 /* AppDelegate.swift in Sources */,
 				E24836FA29929C23003E65E1 /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +362,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E248370B29929C66003E65E1 /* BudgetModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E248370C29929C66003E65E1 /* BudgetModel.xcdatamodel */,
+			);
+			currentVersion = E248370C29929C66003E65E1 /* BudgetModel.xcdatamodel */;
+			path = BudgetModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E24836EC29929C23003E65E1 /* Project object */;
 }
