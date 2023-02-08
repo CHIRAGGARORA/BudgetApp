@@ -31,7 +31,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
-        window.rootViewController = BudgetCategoriesTableViewController(persistentContainer: persistentContainer)
+        let navController = UINavigationController(rootViewController: BudgetCategoriesTableViewController(persistentContainer: persistentContainer))
+        window.rootViewController = navController
         self.window = window
     }
 
