@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2380A09299D594C00E703BA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2380A08299D594C00E703BA /* String+Extensions.swift */; };
 		E24836F829929C23003E65E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24836F729929C23003E65E1 /* AppDelegate.swift */; };
 		E24836FA29929C23003E65E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24836F929929C23003E65E1 /* SceneDelegate.swift */; };
 		E24836FC29929C23003E65E1 /* BudgetCategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24836FB29929C23003E65E1 /* BudgetCategoriesTableViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2380A08299D594C00E703BA /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		E24836F429929C23003E65E1 /* BudgetApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24836F729929C23003E65E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24836F929929C23003E65E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2380A07299D593500E703BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2380A08299D594C00E703BA /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E24836EB29929C23003E65E1 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		E24836F629929C23003E65E1 /* BudgetApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				E2380A07299D593500E703BA /* Extensions */,
 				E24836F729929C23003E65E1 /* AppDelegate.swift */,
 				E24836F929929C23003E65E1 /* SceneDelegate.swift */,
 				E24836FB29929C23003E65E1 /* BudgetCategoriesTableViewController.swift */,
@@ -148,6 +159,7 @@
 				E24836FC29929C23003E65E1 /* BudgetCategoriesTableViewController.swift in Sources */,
 				E24836F829929C23003E65E1 /* AppDelegate.swift in Sources */,
 				E285D63E2994179F00C0340F /* AddBudgetCategoryViewController.swift in Sources */,
+				E2380A09299D594C00E703BA /* String+Extensions.swift in Sources */,
 				E24836FA29929C23003E65E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

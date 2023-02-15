@@ -64,14 +64,47 @@ class AddBudgetCategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.black
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Add Budget"
         setupUI()
     }
     
-    @objc func addBudgetButtonPressed(_ sender: UIButton) {
+    private var isFormValid: Bool {
+        guard let name = nameTextField.text, let amount = amountTextField.text else {
+            return false
+        }
         
+        return !name.isEmpty && !amount.isEmpty && amount.isNumeric && amount.isGreaterThan(0)
+    }
+    
+    private func saveBudgetCategory() {
+        
+        guard let name = nameTextField.text, let amount = amountTextField.text else {
+            return
+        }
+        do {
+            let budgetCategory = BudgetCategory(context: persistentContainer.viewContext)
+            budgetCategory.name = name
+            budgetCategory.amount = Double(amount) ?? 0.0
+            try persistentContainer.viewContext.save()
+            // dismiss the modal
+            dismiss(animated: true)
+        } catch {
+            errorMessageLabel.text = "Can't save Budget Category!"
+        }
+        
+        
+    }
+    
+    @objc func addBudgetButtonPressed(_ sender: UIButton) {
+        if isFormValid {
+            saveBudgetCategory()
+        }
+        else {
+            errorMessageLabel.text = "Can't save Budget. Budget name or value is invalid!"
+            
+        }
     }
     
     private func setupUI() {
